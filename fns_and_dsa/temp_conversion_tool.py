@@ -1,6 +1,11 @@
+#!/usr/bin/python3
+"""
+Temperature Conversion Tool
+Demonstrates global variables and functions for Celsius <-> Fahrenheit conversion
+"""
 
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 
 def convert_to_celsius(fahrenheit):
