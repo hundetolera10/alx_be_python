@@ -8,15 +8,13 @@ def convert_to_celsius(fahrenheit):
     """
     Convert Fahrenheit to Celsius using global factor.
     """
-    celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-    return celsius
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
     """
     Convert Celsius to Fahrenheit using global factor.
     """
-    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
-    return fahrenheit
+    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
 def main():
     try:
@@ -30,11 +28,9 @@ def main():
             result = convert_to_fahrenheit(temp)
             print(f"{temp}°C is {result}°F")
         else:
-            raise ValueError("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
-
-    except ValueError as e:
+            print("Invalid unit. Please enter C or F.")
+    except ValueError:
         print("Invalid temperature. Please enter a numeric value.")
-        print("Error details:", e)
 
 if __name__ == "__main__":
     main()
